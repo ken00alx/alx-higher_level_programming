@@ -1,4 +1,3 @@
-table file 19 lines (18 sloc) 443 Bytes
 #!/usr/bin/python3
 def print_arg(argv):
     n = len(argv) - 1
