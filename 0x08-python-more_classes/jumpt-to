@@ -1,0 +1,27 @@
+import os
+
+# Set the directory path
+directory_path = '/path/to/directory'
+
+# Get a list of all files in the directory
+files = os.listdir(directory_path)
+
+# Set the current file index
+current_index = 0
+
+# Set the next file index
+next_index = current_index + 1
+
+# Check if the next index is within the bounds of the list of files
+if next_index < len(files):
+    # If it is, set the current file index to the next index
+    current_index = next_index
+else:
+    # If it is not, set the current file index to 0 (start at the beginning of the list)
+    current_index = 0
+
+# Get the name of the next file
+next_file = files[current_index]
+
+# Print the name of the next file
+print(next_file)
