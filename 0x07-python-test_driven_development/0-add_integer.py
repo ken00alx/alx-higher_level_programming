@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""function to add 2 integers"""
 def add_integer(a, b=98):
     if not (isinstance(a, int) or isinstance(a, float)) or not (isinstance(b, int) or isinstance(b, float)):
         raise TypeError("a and b must be integers or floats")
